@@ -13,10 +13,14 @@ namespace lottery
             // 產生亂數物件
             Random rand = new Random();
 
-            while (true)
+            // 紀錄次數的變數
+            int count = 0;
+
+            //迴圈重複10次
+            while (count < 10)
             {
 
-                // 印出亂數
+                // 用亂數物件產生亂數
                 int r1 = rand.Next(0, 43);
                 int r2 = rand.Next(0, 43);
                 int r3 = rand.Next(0, 43);
@@ -27,9 +31,13 @@ namespace lottery
                 // 顯示
                 Console.WriteLine("號碼:{0:00} {1:00} {2:00} {3:00} {4:00} {5:00}", r1, r2, r3, r4, r5, r6);
 
+                // 累加產生次數
+                count = count + 1;
+
+            }
+
                 // 暫停螢幕
                 Console.ReadLine();
-            }
 
         }
     }
