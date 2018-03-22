@@ -1,0 +1,1 @@
+c:\git\lottery\lottery\bin\Debug\lottery.exe.config
